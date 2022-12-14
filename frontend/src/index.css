@@ -4,12 +4,14 @@
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
-  --secondary-color: #313bac;
+  --secondary-color: #50ABFF;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
+  --red-color: #D02220;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --shopify-color: #94BE47;
 }
 
 * {
