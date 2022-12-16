@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { AppWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./About.scss";
@@ -27,7 +28,7 @@ const About = () => {
     },
   ];
   return (
-    <>
+    <div className="app__about">
       <h2 className="head-text">
         I Know That <span>Good Dev</span>
         <br />
@@ -48,8 +49,8 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
