@@ -6,10 +6,14 @@ import Workitems from "./WorkItems.js";
 
 import "./Work.scss";
 
+//fix loading page doesnt show work unless clicking tab
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("ui/ux");
+
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   const [filterWork, setFilterWork] = useState([]);
+
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
