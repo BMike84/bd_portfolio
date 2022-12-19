@@ -42,6 +42,14 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import box from "../assets/box.png";
+import restaurant from "../assets/restaurant.png";
+import gpt3 from "../assets/gpt3.png";
+import cafeBernie from "../assets/cafeBernie.png";
+import collections from "../assets/collections.png";
+import Waitlist from "../assets/Waitlist.png";
+import ruby from "../assets/ruby.png";
+import postgresqlIcon from "../assets/postgresql-icon.png";
 
 export default {
   email,
@@ -85,4 +93,12 @@ export default {
   backEnd,
   shopifyStore,
   webDesign,
+  box,
+  collections,
+  gpt3,
+  restaurant,
+  cafeBernie,
+  Waitlist,
+  ruby,
+  postgresqlIcon,
 };

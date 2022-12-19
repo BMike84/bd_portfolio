@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import SkillsItems from "./SkillsItems";
 import "./Skills.scss";
 
-// ***** add all skills and make them as a slider
+// ***** add a slider for skills
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
-  const [skills, setSkills] = useState([]);
   return (
     <>
       <h2 className="head-text">
@@ -38,4 +36,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__primarybg"
+);

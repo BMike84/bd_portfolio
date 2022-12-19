@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import Workitems from "./WorkItems.js";
 
 import "./Work.scss";
@@ -28,7 +28,7 @@ const Work = () => {
     }, 500);
   };
   return (
-    <>
+    <div className="app__work">
       <h2 className="head-text">
         My Creative <span>Portfolio</span> Section
       </h2>
@@ -102,8 +102,12 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </div>
   );
 };
 
-export default AppWrap(Work, "work");
+export default AppWrap(
+  MotionWrap(Work, "app__works"),
+  "work",
+  "app__secondarybg"
+);

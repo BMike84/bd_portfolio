@@ -25,6 +25,21 @@ const SkillsItems = [
     image: images.node,
     bgColor: "",
   },
+  {
+    name: "Sass",
+    image: images.sass,
+    bgColor: "",
+  },
+  {
+    name: "Ruby On Rails",
+    image: images.ruby,
+    bgColor: "",
+  },
+  {
+    name: "Postgresql",
+    image: images.postgresqlIcon,
+    bgColor: "",
+  },
 ];
 
 export default SkillsItems;
