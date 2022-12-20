@@ -40,6 +40,16 @@ const SkillsItems = [
     image: images.postgresqlIcon,
     bgColor: "",
   },
+  {
+    name: "Liquid",
+    image: images.liquid,
+    bgColor: "",
+  },
+  {
+    name: "Bootstrap",
+    image: images.bootstrap,
+    bgColor: "",
+  },
 ];
 
 export default SkillsItems;

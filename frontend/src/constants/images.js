@@ -49,6 +49,8 @@ import cafeBernie from "../assets/cafeBernie.png";
 import collections from "../assets/collections.png";
 import Waitlist from "../assets/Waitlist.png";
 import ruby from "../assets/ruby.png";
+import liquid from "../assets/liquid.png";
+import bootstrap from "../assets/bootstrap.png";
 import postgresqlIcon from "../assets/postgresql-icon.png";
 
 export default {
@@ -101,4 +103,6 @@ export default {
   Waitlist,
   ruby,
   postgresqlIcon,
+  liquid,
+  bootstrap,
 };

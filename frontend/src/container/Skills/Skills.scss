@@ -44,17 +44,14 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: var(--lightGray-color);
+    box-shadow: 0 0 5px #fef4f5;
+    // background-color: var(--darkBlack-color);
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 60%;
+      height: 60%;
     }
 
-    &:hover {
-    
-      box-shadow: 0 0 5px #fef4f5;
-    }
     @media screen and (min-width: 2000px) {
       width: 150px;
       height: 150px;
