@@ -2,40 +2,41 @@ import React from "react";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
-import "./About.scss";
+import "./Services.scss";
 
-const About = () => {
-  const abouts = [
+const Services = () => {
+  const services = [
     {
-      title: "Frontend Developer",
+      title: "Shopify Store Setup",
       description:
-        "I specialize in front-end development. React.js is where I spend most of my time.",
-      img: images.frontEnd,
-      class: "front-back",
-    },
-    {
-      title: "Shopify Developer",
-      description:
-        "I specialize in making Shopify stores. It can be rather from scratch or migrating your existing store from another platform to Shopify.",
+        "A Shopify store is a great way to expand your business. Let's work together to build your store and expand your customer reach.",
       img: images.shopifyStore,
       class: "shopify",
     },
     {
-      title: "Backend Developer",
-      description: "I am good at backend development.",
-      img: images.backEnd,
+      title: "Store Migrations",
+      description:
+        "Have a store already and looking to switch to Shopify? I can help with your migration of data, content, and training if you're new to Shopify.",
+      img: images.migrations,
+      class: "shopify",
+    },
+    {
+      title: "React Websites",
+      description:
+        "Want to build a website using React? I can help you with that.",
+      img: images.webDesign,
       class: "front-back",
     },
   ];
   return (
-    <div className="app__about">
+    <div className="app__services">
       <h2 className="head-text">
-        I Know That <span>Good Dev</span>
+        Checkout my <span>Services</span>
         <br />
-        Means <span>Good Business</span>
+        Shopify & <span>React</span>
       </h2>
       <div className="app__profiles">
-        {abouts.map((about, index) => (
+        {services.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
@@ -54,7 +55,7 @@ const About = () => {
 };
 
 export default AppWrap(
-  MotionWrap(About, "app__about"),
-  "about",
+  MotionWrap(Services, "app__services"),
+  "services",
   "app__primarybg"
 );

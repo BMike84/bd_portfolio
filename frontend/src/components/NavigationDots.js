@@ -1,5 +1,5 @@
 import React from "react";
-const links = ["home", "about", "work", "skills", "contact"];
+const links = ["home", "services", "work", "skills", "contact"];
 
 const NavigationDots = ({ active }) => {
   return (
@@ -7,6 +7,7 @@ const NavigationDots = ({ active }) => {
       {links.map((item, index) => (
         <a
           href={`#${item}`}
+          onClick={console.log(`#${item}`)}
           key={item + index}
           className="app__navigation-dot"
           style={

@@ -22,6 +22,7 @@ import frontEnd from "../assets/frontEnd.jpeg";
 import backEnd from "../assets/backEnd.jpg";
 import webDesign from "../assets/web-design.jpeg";
 import shopifyStore from "../assets/shopify-store.jpeg";
+import migrations from "../assets/migrations.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -105,4 +106,5 @@ export default {
   postgresqlIcon,
   liquid,
   bootstrap,
+  migrations,
 };

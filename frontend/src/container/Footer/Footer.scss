@@ -2,6 +2,15 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+
+  h2 {
+    color: var(--red-color);
+  }
+
+  h3 {
+    color: var(--shopify-color);
+  }
+
    
 }
 

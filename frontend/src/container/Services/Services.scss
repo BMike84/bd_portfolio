@@ -1,8 +1,12 @@
-.app__about {
+.app__services {
   flex: 1;
   width: 100%;
   flex-direction: column;
   margin-top: 1.3rem;
+
+  h2 {
+    color: var(--shopify-color);
+  }
 }
 
 
@@ -16,12 +20,12 @@
 }
 
 .app__profile-item {
-  width: 230px;
+  width: 300px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
 
   img {
     width: 100%;
