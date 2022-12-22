@@ -12,14 +12,14 @@ const Footer = () => {
   const form = useRef();
 
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { name, email, message } = formData;
+  const { user_name, user_email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -83,9 +83,9 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Your Name"
-              value={name}
+              value={user_name}
               onChange={handleChangeInput}
             />
           </div>
@@ -93,9 +93,9 @@ const Footer = () => {
             <input
               className="p-text"
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Your Email"
-              value={email}
+              value={user_email}
               onChange={handleChangeInput}
             />
           </div>

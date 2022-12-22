@@ -7,7 +7,6 @@ const NavigationDots = ({ active }) => {
       {links.map((item, index) => (
         <a
           href={`#${item}`}
-          onClick={console.log(`#${item}`)}
           key={item + index}
           className="app__navigation-dot"
           style={
