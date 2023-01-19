@@ -53,6 +53,7 @@ import ruby from "../assets/ruby.png";
 import liquid from "../assets/liquid.png";
 import bootstrap from "../assets/bootstrap.png";
 import postgresqlIcon from "../assets/postgresql-icon.png";
+import ecomm from "../assets/ecomm.png";
 
 export default {
   email,
@@ -107,4 +108,5 @@ export default {
   liquid,
   bootstrap,
   migrations,
+  ecomm,
 };

@@ -1,6 +1,30 @@
 import { images } from "../../constants";
 const WorkItems = [
   {
+    title: "BD Ecomm Store",
+    url: "https://ecomm-next-theta.vercel.app/",
+    code: "https://github.com/BMike84/ecomm_next",
+    description: "Ecommerce Store built with Next.js Sanity.io, Stripe",
+    image: images.ecomm,
+    tag: ["All", "web app", "ui/ux"],
+  },
+  {
+    title: "Gericht",
+    url: "https://buffone-development-restaurant.netlify.app/",
+    code: "https://github.com/BMike84/figma-restaurant",
+    description: "Figma Design for a prestige restaurant.",
+    image: images.restaurant,
+    tag: ["All", "ui/ux"],
+  },
+  {
+    title: "GPT-3",
+    url: "https://buffone-development-gtp3.netlify.app/",
+    code: "https://github.com/BMike84/figma-gtp3",
+    description: "Gpt3 figma design to showcase frontend skills.",
+    image: images.gpt3,
+    tag: ["All", "ui/ux"],
+  },
+  {
     title: "Routes Clothes",
     url: "https://rdkd5twq7mwjbt9s-61681828005.shopifypreview.com",
     code: "https://rdkd5twq7mwjbt9s-61681828005.shopifypreview.com",
@@ -24,22 +48,7 @@ const WorkItems = [
     image: images.box,
     tag: ["All", "shopify"],
   },
-  {
-    title: "Gericht",
-    url: "https://buffone-development-restaurant.netlify.app/",
-    code: "https://github.com/BMike84/figma-restaurant",
-    description: "Figma Design for a prestige restaurant.",
-    image: images.restaurant,
-    tag: ["All", "ui/ux"],
-  },
-  {
-    title: "GPT-3",
-    url: "https://buffone-development-gtp3.netlify.app/",
-    code: "https://github.com/BMike84/figma-gtp3",
-    description: "Gpt3 figma design to showcase frontend skills.",
-    image: images.gpt3,
-    tag: ["All", "ui/ux"],
-  },
+
   {
     title: "Cut The Line",
     url: "https://github.com/BMike84/cut-the-line",
