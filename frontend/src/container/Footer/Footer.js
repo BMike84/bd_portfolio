@@ -72,9 +72,9 @@ const Footer = () => {
           <p>
             <AiFillPhone />
           </p>
-          <a href="tel:+1 (514) 574-6006" className="p-text">
+          <span href="" className="p-text">
             +1 (514) 574-6006
-          </a>
+          </span>
         </div>
       </div>
       {!isFormSubmitted ? (

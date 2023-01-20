@@ -54,6 +54,8 @@ import liquid from "../assets/liquid.png";
 import bootstrap from "../assets/bootstrap.png";
 import postgresqlIcon from "../assets/postgresql-icon.png";
 import ecomm from "../assets/ecomm.png";
+import next from "../assets/next.png";
+import hydrogen from "../assets/hydrogen.webp";
 
 export default {
   email,
@@ -109,4 +111,6 @@ export default {
   bootstrap,
   migrations,
   ecomm,
+  next,
+  hydrogen,
 };

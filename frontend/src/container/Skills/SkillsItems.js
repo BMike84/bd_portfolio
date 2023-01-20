@@ -1,7 +1,7 @@
 import { images } from "../../constants";
 const SkillsItems = [
   {
-    name: "React",
+    name: "React.Js",
     image: images.react,
     bgColor: "",
   },
@@ -48,6 +48,16 @@ const SkillsItems = [
   {
     name: "Bootstrap",
     image: images.bootstrap,
+    bgColor: "",
+  },
+  {
+    name: "Next.Js",
+    image: images.next,
+    bgColor: "",
+  },
+  {
+    name: "Hydrogen",
+    image: images.hydrogen,
     bgColor: "",
   },
 ];
