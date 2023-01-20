@@ -1,48 +1,49 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { motion } from "framer-motion";
-import { images } from "../../constants";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import ServiceData from "./ServiceData";
 import "./Services.scss";
 
 const Services = () => {
-  const services = [
-    {
-      title: "Shopify Store Setup",
-      description:
-        "A Shopify store is a great way to expand your business. Let's work together to build your store and expand your customer reach.",
-      img: images.shopifyStore,
-      class: "shopify",
-    },
-    {
-      title: "Store Migrations",
-      description:
-        "Have a store already and looking to switch to Shopify? I can help with your migration of data, content, and training if you're new to Shopify.",
-      img: images.migrations,
-      class: "shopify",
-    },
-    {
-      title: "React Websites",
-      description:
-        "Want to build a website using React? I can help you with that.",
-      img: images.webDesign,
-      class: "front-back",
-    },
-  ];
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 5,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView]);
   return (
-    <div className="app__services">
+    <div className="app__services" ref={ref}>
       <h2 className="head-text">
         Checkout my <span>Services</span>
         <br />
         Shopify & <span>React</span>
       </h2>
       <div className="app__profiles">
-        {services.map((about, index) => (
+        {ServiceData.map((about, index) => (
           <motion.div
-            whileInView={{ opacity: 1 }}
+            ref={ref}
+            // whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
+            // transition={{ duration: 0.5, type: "spring" }}
             className="app__profile-item"
             key={about.title + index}
+            animate={animation}
           >
             <img src={about.img} alt="about.title" />
             <h2 className={`bold-text ${about.class}`}>{about.title}</h2>
