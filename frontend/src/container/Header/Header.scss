@@ -33,7 +33,7 @@
 }
 
 .app__header-info {
-  flex: 0.65;
+  flex: 0.55;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,7 +48,6 @@
   }
 }
 
-
 .app__header-badge {
   width: 100%;
   display: flex;
@@ -56,7 +55,8 @@
   align-items: flex-end;
   flex-direction: column;
 
-  .badge-cmp, .tag-cmp  {
+  .badge-cmp,
+  .tag-cmp {
     padding: 1rem 2rem;
     border-radius: 15px;
     flex-direction: row;
@@ -80,7 +80,6 @@
     h1 {
       color: var(--red-color);
     }
-    
   }
 
   .tag-cmp {
@@ -100,7 +99,6 @@
   }
 }
 
-
 .app__header-circles {
   flex: 0.75;
   display: flex;
@@ -108,13 +106,19 @@
   justify-content: space-evenly;
   align-items: flex-start;
   height: 100%;
-  margin-left: 1rem;
+  margin-left: 4rem;
 
   div {
+    background-color: var(--black-color);
     width: 100px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 0 5px #fef4f5;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     img {
       width: 60%;
@@ -122,7 +126,7 @@
     }
   }
 
-   // circles with different height & width
+  // circles with different height & width
 
   div:nth-child(1) {
     width: 85px;
@@ -145,12 +149,12 @@
       width: 400px;
       height: 400px;
     }
-  
+
     div:nth-child(2) {
       width: 170px;
       height: 170px;
     }
-  
+
     div:nth-child(3) {
       width: 200px;
       height: 200px;
@@ -169,7 +173,7 @@
   }
 }
 .app__header-img {
-  flex: .74;
+  flex: 0.75;
   height: 100%;
 
   display: flex;

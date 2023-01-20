@@ -9,14 +9,12 @@
   }
 }
 
-
 .app__profiles {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
-
 }
 
 .app__profile-item {
@@ -34,7 +32,6 @@
     object-fit: cover;
   }
 
-  
   h2 {
     margin-top: 20px;
     font-size: 1.2rem;
@@ -47,7 +44,7 @@
   .shopify {
     color: var(--shopify-color);
   }
-  
+
   p {
     color: var(--white-color);
     margin-top: 10px;
