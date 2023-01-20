@@ -115,6 +115,11 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+
+    background: url("../../assets/bgWhite.png");
+    background-color: var(--black-color);
+    background-size: cover;
+    background-repeat: repeat;
     background-color: var(--black-color);
 
     /* top box shadow */
