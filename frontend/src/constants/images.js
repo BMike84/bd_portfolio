@@ -57,6 +57,7 @@ import ecomm from "../assets/ecomm.png";
 import next from "../assets/next.png";
 import hydrogen from "../assets/hydrogen.webp";
 import gym from "../assets/goldGym.png";
+import sanity from "../assets/sanity.png";
 
 export default {
   email,
@@ -115,4 +116,5 @@ export default {
   next,
   hydrogen,
   gym,
+  sanity,
 };

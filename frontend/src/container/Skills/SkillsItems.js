@@ -60,6 +60,11 @@ const SkillsItems = [
     image: images.hydrogen,
     bgColor: "",
   },
+  {
+    name: "Sanity",
+    image: images.sanity,
+    bgColor: "",
+  },
 ];
 
 export default SkillsItems;
