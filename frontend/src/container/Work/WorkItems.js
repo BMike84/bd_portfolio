@@ -25,6 +25,15 @@ const WorkItems = [
     tag: ["All", "ui/ux"],
   },
   {
+    title: "BD Golds Gym",
+    url: "https://bd-golds-gym.netlify.app/",
+    code: "https://github.com/BMike84/gym_app",
+    description:
+      "Gym App using React, Youtube Api, Exercises Api, Material ui.",
+    image: images.gym,
+    tag: ["All", "ui/ux", "web app"],
+  },
+  {
     title: "Routes Clothes",
     url: "https://rdkd5twq7mwjbt9s-61681828005.shopifypreview.com",
     code: "https://rdkd5twq7mwjbt9s-61681828005.shopifypreview.com",

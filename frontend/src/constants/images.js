@@ -56,6 +56,7 @@ import postgresqlIcon from "../assets/postgresql-icon.png";
 import ecomm from "../assets/ecomm.png";
 import next from "../assets/next.png";
 import hydrogen from "../assets/hydrogen.webp";
+import gym from "../assets/goldGym.png";
 
 export default {
   email,
@@ -113,4 +114,5 @@ export default {
   ecomm,
   next,
   hydrogen,
+  gym,
 };
